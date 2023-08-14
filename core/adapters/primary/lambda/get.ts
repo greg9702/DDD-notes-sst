@@ -1,5 +1,5 @@
-import handler from "@notes-ddd/core/handler";
 import { APIGatewayProxyEvent } from "aws-lambda";
+import { handler } from "./handler";
 
 export const main = handler(
   async (event: APIGatewayProxyEvent): Promise<any> => {
