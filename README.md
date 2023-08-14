@@ -38,4 +38,4 @@ The system contains of:
 
 
 
-
+https://khalilstemmler.com/articles/domain-driven-design-intro/
