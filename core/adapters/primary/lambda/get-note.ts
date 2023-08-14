@@ -1,11 +1,11 @@
 import { APIGatewayProxyEvent } from "aws-lambda";
 import { handler } from "./handler";
+import { getNoteUseCase } from "../../../use-cases/get-note/index";
 
 export const main = handler(
   async (event: APIGatewayProxyEvent): Promise<any> => {
-    // unmarshal request
-    // validate request
-    // call use case
-    return { hello: "world" };
+    let note = await getNoteUseCase.execute(event);
+
+    return note;
   }
 );

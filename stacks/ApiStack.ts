@@ -8,7 +8,7 @@ export function ApiStack({ stack }: StackContext) {
       },
     },
     routes: {
-      "GET /hello": "core/adapters/primary/lambda/get.main",
+      "GET /hello": "core/adapters/primary/lambda/get-note.main",
     },
   });
 
